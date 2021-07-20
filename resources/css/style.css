@@ -1,0 +1,535 @@
+/*DOCUMENT INFORMARTION
+  -Document: Thé thème
+  -Version: 1.0.0
+  -Charley
+*/
+
+/* COLORS
+    -defaut body text #eee
+    -h1
+    -h2
+    -h3
+
+    -button
+    -button:hover 
+
+    -icon black
+
+    -border
+*/
+
+/* FONTS
+    -Default Do Hyeon
+    -Subtitle
+
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRODUITS
+
+*/
+
+/* GLOBAL
+=====================================*/
+
+html {
+    background-color: none;
+}
+
+
+h1, h2, h4 {
+    font-family: Do Hyeon, Arial, Helvetica;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 900;
+    word-spacing: 8px;
+
+}
+
+h2 {
+    color: black;
+    font-size: 300%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    height: 4px;
+    background-color: rgba(158, 27, 27, 0.842) ;
+    width: 270px;
+    content: " " ;
+    margin: auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+
+
+
+
+/* HEADER
+=======================================*/
+
+header {
+    background-image:linear-gradient(   rgba(25, 38, 54, 0.6),
+                                        rgba(214, 28, 84, 0.15)
+                                    ),
+                     url(../image/header.jpg );
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+       }
+
+.home-title {
+    position: absolute;
+    max-width: 600px;
+    top: 20%
+}     
+
+.home-title h1 {
+    font-size: 340%;
+    color: rgba(158, 27, 27, 0.89);
+}
+
+.home-title h1 span {
+    font-weight: 700;
+    color: black;
+}
+
+.home-title p {
+    font-size: 180%;
+    color: #fff
+}
+
+/* Button */
+
+.btn {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-full {
+    background-color: rgba(158, 27, 27, 0.616);
+    color: white;
+    border: black solid 2px;
+    margin-right: 1px;
+}
+
+.btn-tech {
+    background-color: rgba(158, 27, 27, 0.616) ;
+    color:white;
+    border: black solid 2px;
+    margin-right: 1px;
+}
+
+.btn-ghost {
+    background-color: rgba(158, 27, 27, 0.616);
+    color: white;
+    border: black solid 2px;
+}
+
+.btn-full:hover {
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 2px solid white;
+    color: rgb(253, 253, 253);
+}
+
+.btn-tech:hover {
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 2px solid white;
+    color: rgb(253, 253, 253)
+}
+
+.btn-ghost:hover {
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 2px solid white;
+    color: rgb(253, 253, 253)
+}
+
+
+/* PRODUITS
+==================================================== */
+
+.nosproduits {
+    
+    background-image:linear-gradient(      rgba(214, 28, 84, 0.15),
+                                           rgba(25, 38, 54, 0.6)
+                                    );
+}
+
+.nosproduits h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2::after {
+    display: block;
+    height: 4px;
+    background-color: rgba(158, 27, 27, 0.842) ;
+    width: 270px;
+    content: " " ;
+    margin: auto;
+    margin-top: 10px;
+ }
+
+.produits-plus {
+    margin-left: 50px;
+}
+
+.produits-plus:hover .produits-icon {
+    color:rgba(158, 27, 27, 0.89) ;
+    transform: translateX(20px)
+
+}
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+.produits-icon {
+    font-size: 34px;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 1s;
+   
+}
+
+
+/* CARACTERISTIQUES
+====================================================*/
+
+.caracterisques {
+    background-image:linear-gradient(  rgba(25, 38, 54, 0.6),
+                                       rgba(214, 28, 84, 0.15)
+                                    );
+ 
+}
+
+.caracterisques h2 {
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    height: 4px;
+    background-color: rgba(158, 27, 27, 0.842) ;
+    width: 270px;
+    content: " " ;
+    margin: auto;
+    margin-top: 10px;
+ }
+
+.famille-details {
+    margin-bottom: 20px;
+    max-height: 400px;
+    background-color: rgba(105, 105, 105, 0.466);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    
+}
+
+.famille-details h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* GALERIESPHOTOS
+====================================================*/
+
+.galeriesphotos {
+    background-image:linear-gradient(      rgba(214, 28, 84, 0.15),
+                                           rgba(25, 38, 54, 0.6)
+                                    );
+                                   
+}
+
+
+.galeriesphotos h2 {
+    text-align: center;
+}
+
+.galeriesphotos h2::after {
+    display: block;
+    height: 4px;
+    background-color: rgba(158, 27, 27, 0.842) ;
+    width: 270px;
+    content: " " ;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.galeries-img {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+.galeries-title {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.galeries-title h4 {
+    color: black;
+}
+
+
+/* AVISCLIENTS
+====================================================*/
+
+.client {
+    background-image:linear-gradient(  rgba(25, 38, 54, 0.6),
+                                       rgba(214, 28, 84, 0.15)
+                                    );
+    background-size: cover;
+    
+    
+}
+
+
+
+.client blockquote p {
+    font-family: Staatliches;
+    font-size: 250%;
+    color: black;
+    text-align: center;
+}
+
+.client blockquote p {
+    font-family: Alex Brush;
+    font-size: 300%;
+    color: black;
+    text-align: center;
+}
+
+.client-img {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-color: black 3px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+
+/* PRIX
+====================================================*/
+
+.tableau-prix {
+    background-image:linear-gradient(      rgba(214, 28, 84, 0.15),
+                                           rgba(25, 38, 54, 0.6)
+                                    );
+}
+
+.prix {
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url(../image/Capturepromo2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 10px;
+    
+     
+}
+
+
+
+.prix h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.prix h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.prix-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.prix-title-premium {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.prix span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+.prix-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.prix-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.prix-signup {
+    text-align: center;
+}
+
+.prix-signup:hover .btn-prix {
+    background-color: rgba(158, 27, 27, 0.842);
+    color: gold;
+}
+
+.btn-prix {
+    background-color: rgb(255, 238, 5);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+
+
+/* CONTACT
+====================================================*/
+
+.contact {
+    background-image:linear-gradient(  rgba(25, 38, 54, 0.6),
+    rgba(214, 28, 84, 0.15)
+                               );
+}
+ 
+.contact h2 {
+    margin-top: 40px
+}
+
+.contact .map {
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+
+    }
+
+.btn-contact {
+    background-color: rgba(158, 27, 27, 0.616);
+    color: white;
+    border: black solid 2px;
+    margin-right: 1px;
+    margin-bottom: 15px;
+}
+
+.btn-contact:hover {
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 2px solid white;
+    color: rgb(253, 253, 253);    
+}
+
+/* FOOTER
+====================================================*/
+
+footer {
+    background-color: rgba(158, 27, 27, 0.267);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: rgba(158, 27, 27, 0.616);
+}
+
+
+/* MENUNAV
+====================================================*/
+
+.navbar {
+    position: top fixed;
+}
+
+.navbar container {
+    color: rgb(253, 253, 253);
+}
+
+.monbg {
+    background-color: rgb(255, 255, 255);
+      
+    }
+  /*---  background-color: rgba(0, 0, 0, 0.507);
+}
